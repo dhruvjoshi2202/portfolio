@@ -51,7 +51,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-purple-500/30 rounded-3xl blur-2xl"></div>
           <Image
-            src="/dhruv.jpg"  // Place your image in public/img/my.jpg
+            src="/img/dhruv.jpg"  // Place your image in public/img/my.jpg
             alt="Dhruv Joshi"
             width={400}
             height={400}
