@@ -38,7 +38,7 @@ export default function Home() {
 
             {/* Resume Download */}
             <Link
-              href="/dhruv.pdf"   // Place your resume in public/dhruv.pdf
+              href="/"   // Place your resume in public/dhruv.pdf
               target="_blank"
               className="px-8 py-3 rounded-xl border border-gray-600 hover:border-white transition"
             >
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-purple-500/30 rounded-3xl blur-2xl"></div>
           <Image
-            src="/img/my.jpg"  // Place your image in public/img/my.jpg
+            src="/dhruv.jpg"  // Place your image in public/img/my.jpg
             alt="Dhruv Joshi"
             width={400}
             height={400}
