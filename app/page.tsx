@@ -11,6 +11,8 @@ export default function Home() {
 
       {/* ================= HERO ================= */}
       <section className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-24 py-24 flex flex-col-reverse md:flex-row items-center gap-16">
+        
+        {/* Text Content */}
         <div className="flex-1">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
             Full Stack Developer building{" "}
@@ -23,9 +25,7 @@ export default function Home() {
             I’m <span className="text-white font-semibold">Dhruv Joshi</span>, a
             Full Stack Developer focused on crafting high-performance,
             production-ready applications using{" "}
-            <span className="text-blue-400">
-              Next.js, Node.js & MongoDB
-            </span>.
+            <span className="text-blue-400">Next.js, Node.js & MongoDB</span>.
           </p>
 
           <div className="flex flex-wrap gap-5">
@@ -36,8 +36,10 @@ export default function Home() {
               View Projects
             </Link>
 
+            {/* Resume Download */}
             <Link
-              href="/dhruv.jpg"
+              href="/dhruv.pdf"   // Place your resume in public/dhruv.pdf
+              target="_blank"
               className="px-8 py-3 rounded-xl border border-gray-600 hover:border-white transition"
             >
               Download Resume
@@ -45,10 +47,11 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Profile Image */}
         <div className="flex-1 flex justify-center relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-purple-500/30 rounded-3xl blur-2xl"></div>
           <Image
-            src="/img/my.jpg"
+            src="/img/my.jpg"  // Place your image in public/img/my.jpg
             alt="Dhruv Joshi"
             width={400}
             height={400}
