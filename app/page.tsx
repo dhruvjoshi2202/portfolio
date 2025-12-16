@@ -37,7 +37,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/Dhruv_Joshi_Resume.pdf"
+              href="/Dhruv.jpg"
               target="_blank"
               className="px-8 py-3 rounded-xl border border-gray-600 hover:border-white transition"
             >
