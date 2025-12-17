@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-5">
             <Link
-              href="#projects"
+              href="/projects"
               className="px-8 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 transition shadow-lg shadow-blue-500/30"
             >
               View Projects
@@ -98,35 +98,92 @@ export default function Home() {
 
       {/* ================= PROJECTS ================= */}
       <section
-        id="projects"
-        className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-24 py-20"
-      >
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Projects</h2>
+          id="projects"
+          className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-24 py-20"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Featured <span className="text-blue-500">Projects</span>
+          </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {[1, 2, 3, 4].map((item) => (
-            <div
-              key={item}
-              className="p-7 rounded-2xl border border-gray-700 hover:border-white transition bg-white/5 backdrop-blur-sm"
-            >
+          <div className="grid gap-8 sm:grid-cols-2">
+            
+            {/* Portfolio */}
+            <div className="p-7 rounded-2xl border border-gray-700 bg-white/5 hover:border-blue-500 transition">
               <h3 className="text-xl font-semibold mb-3">
-                Project Name {item}
+                Personal Portfolio
               </h3>
 
-              <p className="text-gray-400 mb-5">
-                Full stack application with authentication, optimized APIs and
-                responsive UI.
+              <p className="text-gray-400 mb-5 leading-relaxed">
+                My personal developer portfolio built to showcase projects, skills,
+                and experience with a clean, responsive, and performance-focused UI.
               </p>
 
-              <span className="text-sm text-blue-400">
-                Next.js · MongoDB · Tailwind
-              </span>
+              <div className="flex flex-wrap gap-2 text-sm text-blue-400">
+                <span>Next.js</span>
+                <span>· Tailwind</span>
+                <span>· Vercel</span>
+                <span>· GitHub</span>
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ================= EXPERIENCE ================= */}
+            {/* Meesho Clone */}
+            <div className="p-7 rounded-2xl border border-gray-700 bg-white/5 hover:border-blue-500 transition">
+              <h3 className="text-xl font-semibold mb-3">
+                Meesho Website Clone
+              </h3>
+
+              <p className="text-gray-400 mb-5 leading-relaxed">
+                A responsive e-commerce website clone inspired by Meesho,
+                focusing on modern UI patterns and scalable frontend architecture.
+              </p>
+
+              <div className="flex flex-wrap gap-2 text-sm text-blue-400">
+                <span>Next.js</span>
+                <span>· Tailwind</span>
+                <span>· Vercel</span>
+                <span>· GitHub</span>
+              </div>
+            </div>
+
+            {/* E-Book Reader */}
+            <div className="p-7 rounded-2xl border border-gray-700 bg-white/5 hover:border-blue-500 transition">
+              <h3 className="text-xl font-semibold mb-3">
+                E-Book Reader
+              </h3>
+
+              <p className="text-gray-400 mb-5 leading-relaxed">
+                A Python-based e-book reader integrating APIs for fetching content
+                and providing a smooth reading experience.
+              </p>
+
+              <div className="flex flex-wrap gap-2 text-sm text-blue-400">
+                <span>Python</span>
+                <span>· APIs</span>
+                <span>· File Handling</span>
+              </div>
+            </div>
+
+            {/* TripTrack */}
+            <div className="p-7 rounded-2xl border border-gray-700 bg-white/5 hover:border-blue-500 transition">
+              <h3 className="text-xl font-semibold mb-3">
+                TripTrack – Travel Management System
+              </h3>
+
+              <p className="text-gray-400 mb-5 leading-relaxed">
+                A travel trip management system designed to organize itineraries,
+                manage trips, and store user travel data efficiently.
+              </p>
+
+              <div className="flex flex-wrap gap-2 text-sm text-blue-400">
+                <span>Python</span>
+                <span>· APIs</span>
+                <span>· Database</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        {/* ================= EXPERIENCE ================= */}
       <section className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-24 py-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Experience</h2>
 
